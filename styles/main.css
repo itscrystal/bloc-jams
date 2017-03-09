@@ -70,6 +70,10 @@ body {
     max-width: 64rem;
 }
 
+.container.narrow {
+    max-widt: 56rem;
+}
+
 /* MEDIA QUERIES -------------------------------- */
 /* medium and small screens 640px. e.g. smaller tablets and larger phones */
 @media (min-width: 640px) {
