@@ -71,7 +71,7 @@ body {
 }
 
 .container.narrow {
-    max-widt: 56rem;
+    max-width: 56rem;
 }
 
 /* MEDIA QUERIES -------------------------------- */
