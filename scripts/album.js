@@ -28,6 +28,30 @@ var albumMarconi = {
      ]
  };
 
+var albumAltJ = {
+     title: 'An Awesome Wave',
+     artist: 'alt-J',
+     label: 'Atlantic Records',
+     year: '2012',
+     albumArtUrl: 'assets/images/album_covers/22.jpg',
+     songs: [
+         { title: 'Intro', duration: '2:38' },
+         { title: 'Interlude 1', duration: '1:12' },
+         { title: 'Tessellate', duration: '3:01'},
+         { title: 'Breezeblocks', duration: '3:47' },
+         { title: 'Interlude 2', duration: '1:17'},
+         { title: 'Something Good', duration: '3:37'},
+         { title: 'Dissolve Me', duration: '3:59'},
+         { title: 'Matilda', duration: '3:48'},
+         { title: 'Ms', duration: '3:59'},
+         { title: 'Fitzpleasure', duration: '3:39'},
+         { title: 'Interlude 3', duration: '0:53'},
+         { title: 'Bloodflood', duration: '4:09'},
+         { title: 'Taro', duration: '5:06'},
+         { title: 'Hand-Made', duration: '2:37'}
+     ]
+ };
+
  var createSongRow = function(songNumber, songName, songLength) {
      var template =
         '<tr class="album-view-song-item">'
@@ -65,4 +89,14 @@ var setCurrentAlbum = function(album) {
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
+     
+     var albums = [albumPicasso, albumMarconi, albumAltJ]
+     var index = 1;
+     albumImage.addEventListener("click", function(event) {
+         setCurrentAlbum(albums[index]);
+         index++;
+         if (index == albums.length) {
+             index = 0;
+         }
+     });
  };
