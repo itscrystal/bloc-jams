@@ -311,7 +311,7 @@ $(document).ready(function() {
     $previousButton.click(previousSong);
     $nextButton.click(nextSong);
 
-    var albumArray = [albumPicasso,albumMarconi,albumAlGreen];
+    var albumArray = [albumPicasso,albumMarconi,albumAltJ];
     var index = 1;
     document.getElementsByClassName('album-cover-art')[0].addEventListener("click", function(event) {
         setCurrentAlbum(albumArray[index]);
